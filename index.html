@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wood Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Wood Size Calculator</h1>
+
+    <div class="input-group">
+      <input type="number" id="length" placeholder="Length (in inches)">
+      <input type="number" id="breadth" placeholder="Breadth (in inches)">
+      <input type="number" id="height" placeholder="Height (in feet)">
+      <input type="number" id="quantity" placeholder="Quantity">
+      <button onclick="addWood()">Add Wood Size</button>
+    </div>
+
+    <div class="input-group">
+      <input type="number" id="costPerCFT" placeholder="Cost per CFT (₹)">
+      <button onclick="calculateTotal()">Calculate Total</button>
+    </div>
+
+    <div id="woodList"></div>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
